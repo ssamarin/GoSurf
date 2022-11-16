@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    height: 100vh;
     &__slider {
         &-item {
             position: relative;
@@ -9,6 +11,35 @@
             position: absolute;
             right: 80px;
             bottom: 116px;
+            text-align: right;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        &-title {
+            margin-bottom: 48px;
+            font-size: 80px;
+            line-height: 108%;
+            color: #FFFFFF;
+        }
+        &-subtitle {
+            margin-bottom: 11px;
+        }
+        &-text {
+            margin-bottom: 20px;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 135%;
+            color: #FFF;
+        }
+        &_arrows {
+            position: absolute;
+            top: 40px;
+            right: 80px;
+            z-index: 2;
+            cursor: pointer;
+            &-left {
+                right: 125px;
+            }
         }
     }
 }

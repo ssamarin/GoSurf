@@ -20,19 +20,24 @@ a {
     text-decoration: none;
 }
 
-// .subtitle-left {
-// font-style: normal;
-// font-weight: 400;
-// font-size: 22px;
-// line-height: 32px;
-// /* identical to box height, or 145% */
-
-// text-align: right;
-// letter-spacing: 7.33333px;
-// text-transform: uppercase;
-
-// color: #FFFFFF;
-
-//         mix-blend-mode: normal;
-//         opacity: 0.5;
-// }
+.subtitle-left {
+    padding-left: 103px;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 145%;
+    letter-spacing: 7.33333px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    color: #FFF;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+    }
+}
