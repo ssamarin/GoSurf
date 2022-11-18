@@ -1,6 +1,18 @@
 .header {
     position: relative;
     height: 100vh;
+    &__main-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        max-width: 467px;
+        font-weight: 800;
+        font-size: 200px;
+        line-height: 78%;
+        text-transform: uppercase;
+        opacity: 0.07;
+    }
     &__slider {
         &-item {
             position: relative;
@@ -13,7 +25,6 @@
             bottom: 116px;
             text-align: right;
             text-transform: uppercase;
-            color: #fff;
         }
         &-title {
             margin-bottom: 48px;
@@ -28,7 +39,6 @@
             margin-bottom: 20px;
             font-size: 40px;
             line-height: 135%;
-            color: #FFF;
         }
         &_arrows {
             position: absolute;
@@ -47,11 +57,55 @@
         bottom: 36px;
         max-width: 920px;
         width: 100%;
-        color: #fff;
         .slick-current {
             .dots__container {
                 border-top: 4px solid $green;
             }
+        }
+    }
+    &__aside {
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        z-index: 3;
+        border-right: 1px solid rgba(#fff, .25);
+    }
+    &__search {
+        padding: 15px 0 35px;
+    }
+    &__date {
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 89%;
+        span {
+            padding-top: 10px;
+            margin-bottom: 30px;
+            display: block;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 119%;
+            text-align: center;
+            letter-spacing: 1.4px;
+        }
+    }
+    &__location {
+        padding-left: 19px;
+        position: relative;
+        display: inline-block;
+        font-weight: 300;
+        font-size: 12px;
+        line-height:  117%;
+        letter-spacing: 1.05px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 11px;
+            height: 13px;
+            background-image: url('../icons/nav/map.svg');
         }
     }
 }
@@ -78,6 +132,24 @@
 }
 
 
+
+.menu {
+    &__list {
+        padding-top: 40px;
+    }
+    &__item {
+        margin-bottom: 37px;
+    }
+    &__name {
+        padding-top: 6px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 117%;
+        letter-spacing: 3px;
+    }
+}
+
 .slick-track {
     transform: translate3d(0px , 0px, 0px) !important; 
 }
+

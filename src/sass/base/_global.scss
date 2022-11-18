@@ -4,6 +4,7 @@ body  {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 800;
     font-size: 16px;
+    color: #fff;
 }
 
 .page {
@@ -19,6 +20,17 @@ body  {
 a {
     display: inline-block;
     text-decoration: none;
+    color: #fff;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .subtitle-left {
