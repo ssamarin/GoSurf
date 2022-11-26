@@ -1,9 +1,13 @@
+@import '_variables';
+
 html,
 body  {
     height: 100%;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 800;
     font-size: 16px;
+    text-transform: uppercase;
+    background-color: #171919;
     color: #fff;
 }
 
@@ -15,6 +19,11 @@ body  {
 
 .main {
     flex: 1 1 auto;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1920px;
 }
 
 a {
@@ -52,5 +61,32 @@ ul, ol, li {
         width: 80px;
         height: 1px;
         background-color: #fff;
+    }
+}
+
+.title {
+    span {
+        display: inline-block;
+        position: relative;
+        font-size: 200px;
+        transform: translateX(-50px);
+        color: rgba(#fff, .02);
+    }
+    h3 {
+        position: absolute;
+        top: 0;
+        right: -5px;
+        margin: 0;
+        font-size: 80px;
+        color: #fff;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: 0;
+            width: 80px;
+            height: 1px;
+            background-color: $green;
+        }
     }
 }

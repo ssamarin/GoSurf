@@ -10,7 +10,6 @@
         font-weight: 800;
         font-size: 200px;
         line-height: 78%;
-        text-transform: uppercase;
         opacity: 0.07;
     }
     &__slider {
@@ -24,13 +23,11 @@
             right: 80px;
             bottom: 116px;
             text-align: right;
-            text-transform: uppercase;
         }
         &-title {
             margin-bottom: 48px;
             font-size: 80px;
             line-height: 108%;
-            color: #FFFFFF;
         }
         &-subtitle {
             margin-bottom: 11px;
@@ -98,6 +95,7 @@
         font-size: 12px;
         line-height:  117%;
         letter-spacing: 1.05px;
+        text-transform: capitalize;
         &::before {
             content: "";
             position: absolute;
@@ -135,11 +133,11 @@
     &__number {
         font-size: 24px;
         line-height: 142%;
-        text-transform: uppercase;
     }
     &__name {
         font-weight: 300;
         line-height: 119%;
+        text-transform: capitalize;
     }
 }
 
@@ -158,6 +156,7 @@
         font-size: 12px;
         line-height: 117%;
         letter-spacing: 3px;
+        text-transform: capitalize;
     }
 }
 
