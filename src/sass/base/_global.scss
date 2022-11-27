@@ -42,7 +42,7 @@ ul, ol, li {
     list-style: none;
 }
 
-.subtitle-left {
+.headline-left {
     padding-left: 103px;
     position: relative;
     display: inline-block;
@@ -87,6 +87,51 @@ ul, ol, li {
             width: 80px;
             height: 1px;
             background-color: $green;
+        }
+    }
+}
+
+.subtitle {
+    display: inline-block;
+    text-align: right;
+    &__head {
+        padding-right: 10px;
+        font-size: 40px;
+        color: #FFFFFF;
+    }
+}
+
+.line {
+    font-weight: 100;
+}
+
+.btn {
+    font-size: 40px;
+    line-height: 90%;
+    span {
+        margin-left: 19px;
+        padding: 17px 57px 15px 17px;
+        position: relative;
+        display: inline-block;
+        background-color: $green;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            width: 20px;
+            height: 1px;
+            background-color: #fff;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 17px;
+            width: 25px;
+            height: 21px;
+            transform: translateY(-50%);
+            background-image: url(../icons/arrows/arrow_right.svg);
         }
     }
 }
